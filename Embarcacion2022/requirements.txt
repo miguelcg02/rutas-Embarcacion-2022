@@ -1,0 +1,11 @@
+conda config --prepend channels conda-forge
+conda create -n ox --strict-channel-priority osmnx
+conda install --channel conda-forge osmnx
+conda install -c conda-forge osmnx
+conda install -c conda-forge matplotlib
+conda install -c conda-forge shapely
+conda install -c anaconda networkx
+conda install --channel conda-forge geopandas
+conda install -c conda-forge geopy
+conda install -c conda-forge opencv
+conda install -c conda-forge imutils
