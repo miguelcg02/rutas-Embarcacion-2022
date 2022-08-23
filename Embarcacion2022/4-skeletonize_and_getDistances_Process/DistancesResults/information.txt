@@ -1,0 +1,17 @@
+Magangue - Pinillos:
+
+PixelInicio: (900, 575)
+PixelFinal: (4898, 4059)
+Distancia: 66184.73 meters
+
+Puerto Nare - Puerto Triunfo: 
+
+PixelInicio: (643, 1075)
+PixelFinal: (4059, 662)
+Distancia: 42269.49 meters
+
+Puerto Berrio - Puerto Nare:
+
+PixelInicio: (580, 3010) 
+PixelFinal:  (4323, 757)
+Distancia:   49645.28 meters

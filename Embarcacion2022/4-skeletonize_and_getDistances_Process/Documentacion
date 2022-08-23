@@ -1,0 +1,26 @@
+En esta carpeta contiene varias cosas.
+
+BaseImage: Se encuentran las imagenes bases de donde comienza todo el proceso, aqui se encuentra Guatape, MaganguePinillos...
+
+DistancesResults: Aqui se encuentran los resultados de las rutas, entre puertos, esta la imagen respectiva y dentro de la carpeta se encuentra un archivo con la informacion del pixel de inicio, final y la distancia respectiva entre puertos
+
+PaperEjemplos : Aqui se encuentran unos codigos y imagenes que se usaron para construir el paper.
+
+ResultsGuatape : Se encuentran resultados de simulaciones de rutas sobre Guatape
+
+SkeletonizeImage: Se encuentran las imagenes de BaseImage esqueletonizadas
+
+superPosicion : Se encuentras las imagenes de BaseImage combinadas con la de SkeletonizeImage, esto se hace con la idea de poder visualizar el esqueleto sobre la imagen real.
+
+---------------------------------------------------------
+
+Codigos:
+
+Skeletonize.py: El programa en el codigo esta documentado de los cambios que se deben hacer y como funciona, se le tiene que pasar una imagen png la cual se quiere esqueletonizar y ya esto se encarga de hacer el proceso y guardarlo en otra imagen que se puede definir el <path> y nombre de imagen, tambien con extension .png. Este programa se encarga exclusivamente de esqueletonizar la imagen
+
+Get_distance.py: El programa en el codigo esta documentado de los cambios que se deben hacer para utilizarlo, basicamente hay que pasarle una imagen esquelotonizada tipo png, esto lo que se va a encargar es de convertir esta imagen a un grafo disperso, luego se tienen que definir dos pixeles un nodo inicial y final, estos pixeles se sacan de la imagen y deben ser posiciones de la esqueletonizacion. Ya internamente se ejecutan algunos algoritmos, imprime la distancia mas corta entre dos puntos y luego guarda la imagen en un <path> que se le puede deninir y el nombre de la imagen
+
+search_route: Este progama en el codigo esta documentado. Se encarga de usar un algoritmo de backtracking para dado un nodo inicial, una distancia en metros, el path de la imagen de superposicion del esqueletonize. Buscar la ruta que cumpla estrictamente con la limitante dado y es la distancia a recorrer. Internamente el codigo funciona a la perfeccion con la imagen de superposicion de guatape, ya que aqui es donde se simularon todas las rutas, es decir que los nodos de inicio preestablecidos se basan en esta imagen; sin embargo, si se quiere utilizar otra imagen se puede cambiar el diccionario de dataPoints y pasarle pixeles validos en base a la imagen que se quiera usar para trazar la ruta o en su defecto y no se quiere nodos iniciales preestablecidos, se puede modificar el codigo y leer el nodo inicial.
+Por ultimo pide un nombre de imagen para guardar la ruta trazada.
+
+
